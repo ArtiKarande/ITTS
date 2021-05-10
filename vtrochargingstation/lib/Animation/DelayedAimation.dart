@@ -1,0 +1,65 @@
+/*
+ *
+ *  * Created by Arti Karande in the year of 2020.
+ *  * Copyright (c) 2020 Arti Karande. All rights reserved.
+ *
+ */
+
+import 'dart:async';
+import 'package:flutter/material.dart';
+
+/// this animation is used for [listview] UI widgets
+/// used in Gold / Group / history / setting classes
+
+class DelayedAimation extends StatefulWidget {
+  final Widget child;
+  final int delay;
+
+  DelayedAimation({@required this.child, this.delay});
+
+  @override
+  _DelayedAimationState createState() => _DelayedAimationState();
+}
+
+class _DelayedAimationState extends State<DelayedAimation> with TickerProviderStateMixin {
+  AnimationController _controller;
+  Animation<Offset> _animOffset;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _controller =
+        AnimationController(vsync: this, duration: Duration(milliseconds: 700));  // before its 800
+    final curve =
+    CurvedAnimation(curve: Curves.decelerate, parent: _controller);
+    _animOffset =
+        Tween<Offset>(begin: const Offset(0.0, 0.35), end: Offset.zero)
+            .animate(curve);
+
+    if (widget.delay == null) {
+      _controller.forward();
+    } else {
+      Timer(Duration(milliseconds: widget.delay), () {
+        _controller.forward();
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _controller.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return FadeTransition(
+      child: SlideTransition(
+        position: _animOffset,
+        child: widget.child,
+      ),
+      opacity: _controller,
+    );
+  }
+}

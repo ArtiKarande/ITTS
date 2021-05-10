@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "132166352509",
+    "firebase_url": "https://chargingstation-2921c.firebaseio.com",
+    "project_id": "chargingstation-2921c",
+    "storage_bucket": "chargingstation-2921c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132166352509:android:ac12566dd00c52093e3b14",
+        "android_client_info": {
+          "package_name": "com.vtro.vtrochargingstation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132166352509-94dpd38ve6llhj3u2n9pr8b4fcauiive.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vtro.vtrochargingstation",
+            "certificate_hash": "0960fb9e52601f638ea18f8ab14303b3a17ab48f"
+          }
+        },
+        {
+          "client_id": "132166352509-d0pvs8tektf82ug6k7nrne9drlt73mhg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC76DNFHu134VS6ccY34PTXzOS2JJNy-_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132166352509-d0pvs8tektf82ug6k7nrne9drlt73mhg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "132166352509-ehicdndmo6epu9qa2jsj4pe1f9am6trg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vtro.vtrochargingstation"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

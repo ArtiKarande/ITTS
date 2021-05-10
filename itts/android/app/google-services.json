@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "703150998185",
+    "firebase_url": "https://itts-f5457.firebaseio.com",
+    "project_id": "itts-f5457",
+    "storage_bucket": "itts-f5457.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703150998185:android:7598e45e9c8b96c6201fb8",
+        "android_client_info": {
+          "package_name": "com.skroman.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703150998185-9m5vvgvtgic2066g5abonjqdq85up3vt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skroman.app",
+            "certificate_hash": "071b8d8589c65035c758180639ed3a47170911ec"
+          }
+        },
+        {
+          "client_id": "703150998185-s4fkj4sokm79n0hqnkh3kk2dbvvaliaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4FAaX4gr_wIFi8Rjw0xPjpuIFLEEgQUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703150998185-s4fkj4sokm79n0hqnkh3kk2dbvvaliaq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "703150998185-babrgp7dh4s48i6elkil4b4mbq0gii85.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.itts.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

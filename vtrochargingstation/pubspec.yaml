@@ -1,0 +1,194 @@
+name: vtrochargingstation
+description: A new Flutter application for owner and charging station app
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+  flutter_launcher_icons: ^0.7.0
+  modal_progress_hud: ^0.1.3
+  flutter_spinkit: "^4.0.0"
+  google_maps_flutter: ^0.5.28+1
+  geolocator: ^5.3.1
+  location: ^3.0.1
+  flutter_google_places: ^0.2.6
+
+  flutter_polyline_points: ^0.2.1
+  uuid: ^2.0.4
+
+  firebase_core: ^0.5.1
+  firebase_auth: ^0.18.1+2
+  firebase_crashlytics: ^0.2.0
+  firebase_messaging: ^6.0.16
+
+  shared_preferences: ^0.5.3+1
+  http: ^0.12.0+2
+  dio: ^3.0.8
+
+  flutter_neumorphic: ^3.0.3
+  pin_code_fields: ^5.2.0
+  fluttertoast: ^3.1.3
+  google_sign_in: ^4.5.4
+  provider: ^4.1.3+1
+  mqtt_client: ^3.1.0
+  data_connection_checker: ^0.3.4
+  awesome_dialog:
+  flutter_barcode_scanner: ^1.0.1
+  qr_code_scanner: ^0.3.5
+  slider_button: ^0.6.0
+  fdottedline: ^1.0.1
+  flutter_xlider: ^3.4.0
+  shimmer: ^1.1.2
+  cashfree_pg: ^0.0.4+9
+  intro_slider: ^2.3.3
+  image_picker: 0.5.0+3
+  path_provider: ^1.6.8
+  month_picker_dialog: ^0.3.2
+  maps_launcher: ^1.2.2+2
+  flutter_facebook_login: ^3.0.0
+  intl: ^0.16.1
+  contacts_service: ^0.4.6
+  flutter_contact: ^0.6.4
+  permission_handler: ^5.0.0
+  animations: ^1.1.2
+  flutter_slidable: ^0.5.7
+  page_transition: ^1.1.7+6
+  animated_text_kit: ^3.1.2
+  flutter_svg: 0.19.0
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path_android: "images/applogoNew.png"
+  image_path_ios: "images/applogoNew.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - images/vehicleIcon.png
+    - images/vtrologo.png
+    - images/fb.png
+    - images/google.png
+    - images/applogo.png
+    - images/turbo.png
+    - images/payment.png
+    - images/map_style.txt
+    - images/pointMap.png
+    - images/nearbyUnavailable.png
+    - images/flash.png
+    - images/search.png
+    - images/background.png
+    - images/plugin.png
+    - images/radio.png
+    - images/splashscreen.png
+    - images/current_location_marker.png
+    - images/navigateMap.png
+    - images/iIcon.png
+    - images/currentLocation.png
+    - images/twitter.png
+    - images/mapIcon.png
+    - images/profile.png
+    - images/bgg.png
+    - images/line.png
+    - images/evehicle.png
+    - images/supportIcon.png
+    - images/mapimg.png
+    - images/infoIcon.png
+    - images/edit.png
+    - images/backgroundCircle.png
+    - images/info.png
+    - images/loginCircle.png
+    - images/share.png
+    - images/techSupport.png
+    - images/download.png
+    - images/battery.png
+    - images/healthy.png
+    - images/normal.png
+    - images/qrBackground.png
+    - images/radioUnselected.png
+    - images/bell.png
+    - images/location_icon.png
+    - images/walletBlack.png
+    - images/chargerPlug.png
+    - images/promocode.png
+    - images/profileIcon.png
+    - images/noDataFound.png
+    - images/backarrow.png
+    - images/scanner.png
+    - images/healthy_battery.png
+    - images/applogoNew.png
+    - images/updownarrow.png
+    - images/drawer/helpImage.png
+    - images/drawer/feedbackImage.png
+    - images/drawer/inviteImage.png
+    - images/profile/goldcard.png
+    - images/profile/group.png
+    - images/profile/plansIcon.png
+    - images/profile/reservation.png
+    - images/profile/settings.png
+    - images/profile/editImage.png
+    - images/profile/support.png
+    - images/profile/viewhistory.png
+    - images/profile/wallet.png
+    - images/slider/slider1.png
+    - images/slider/slider2.png
+    - images/slider/slider3.png
+    - images/slider/circle2.png
+    - images/slider/circle3.png
+    - images/group/groupEmpty.png
+    - images/group/smiley.png
+    - images/group/group_no_img.png
+    - images/group/addMember.png
+    - images/group/exitGroup.png
+    - images/group/wallet_svg.svg
+
+    - images/gif/mapgif.gif
+    - images/gif/plugAnim.gif
+    - images/gif/start.gif
+
+  fonts:
+    - family: SofiaProRegular
+      fonts:
+        - asset: fonts/Sofia_Pro_Regular.ttf
+        - asset: fonts/Sofia_Pro_Bold.ttf
+    - family: SofiaProBold
+      fonts:
+        - asset: fonts/Sofia_Pro_Bold.ttf

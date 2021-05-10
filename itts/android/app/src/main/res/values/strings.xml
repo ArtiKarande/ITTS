@@ -1,0 +1,8 @@
+<!--
+  ~ Created by Arti Karande in the year of 2020.
+  ~ Copyright (c) 2020 Arti Karande. All rights reserved.
+  -->
+
+<resources>
+    <string name="default_notification_channel_id">hahjghsds</string>
+</resources>
